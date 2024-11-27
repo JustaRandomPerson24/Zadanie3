@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<News>> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Błąd połączenia: " + t.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.e("RetrofitError", "Błąd połączenia: ", t); // Zapisz szczegóły błędu
+                Log.e("RetrofitError", "Błąd połączenia: ", t);
             }
         });
     }
